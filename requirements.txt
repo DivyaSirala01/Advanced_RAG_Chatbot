@@ -1,0 +1,58 @@
+# ================================
+# 🧱 CORE BACKEND (API LAYER)
+# ================================
+
+fastapi                # Backend framework to expose RAG pipeline via APIs
+uvicorn               # ASGI server to run FastAPI app
+
+
+# ================================
+# 🎨 FRONTEND (CHATBOT UI)
+# ================================
+
+streamlit             # Lightweight UI for chatbot interface
+
+
+# ================================
+# 🧠 LLM + RAG FRAMEWORK
+# ================================
+
+langchain             # Core framework for building RAG pipelines
+langchain-community   # Community integrations (loaders, vector stores, etc.)
+langchain-openai      # OpenAI integration for LLMs + embeddings
+
+
+# ================================
+# 🔍 RETRIEVAL LAYER
+# ================================
+
+faiss-cpu             # Vector database for similarity search (fast + local)
+rank-bm25             # BM25 sparse retriever (used by langchain_community BM25Retriever)
+
+
+# ================================
+# 💾 PERSISTENT CACHE
+# ================================
+
+pymongo               # MongoDB driver for persistent semantic / response cache
+
+
+# ================================
+# ⚙️ DATA VALIDATION / STRUCTURE
+# ================================
+
+pydantic              # Request/response validation for FastAPI
+
+
+# ================================
+# 🔐 ENVIRONMENT MANAGEMENT
+# ================================
+
+python-dotenv         # Load environment variables from .env file
+
+
+# ================================
+# ⚡ TOKENIZATION / PERFORMANCE
+# ================================
+
+tiktoken              # Token counting (useful for context limits & optimization)

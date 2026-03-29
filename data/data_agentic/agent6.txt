@@ -1,0 +1,23 @@
+Memory in Agentic Systems
+
+Agents need memory to track progress and context.
+
+Part 1: Short-Term Memory
+
+Stores:
+- Current conversation
+- Intermediate steps
+- Recent actions
+
+Used for immediate reasoning.
+
+Part 2: Long-Term Memory
+
+Stores:
+- Past interactions
+- Knowledge
+- Learned patterns
+
+Helps in personalization and continuity.
+
+State management ensures the agent knows where it is in the workflow.

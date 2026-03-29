@@ -1,0 +1,1 @@
+# Adding Image style output

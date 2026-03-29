@@ -1,0 +1,30 @@
+Data Ingestion in RAG Systems
+
+Data ingestion is the first step in a RAG pipeline. It involves collecting and preparing raw data that will be used as the knowledge base.
+
+Data sources can include:
+- PDFs
+- Text files
+- Web pages
+- Databases
+- APIs
+- OCR-processed documents
+
+The ingestion process typically involves:
+1. Loading documents
+2. Cleaning data (removing noise, formatting issues)
+3. Normalizing text
+4. Structuring content
+
+Challenges in ingestion:
+- Handling multiple file formats
+- Dealing with noisy or incomplete data
+- Maintaining document structure
+- Extracting meaningful text from images (OCR)
+
+A good ingestion pipeline ensures:
+- High-quality input data
+- Consistent formatting
+- Minimal noise
+
+In production systems, ingestion is done offline and stored for fast retrieval during runtime.

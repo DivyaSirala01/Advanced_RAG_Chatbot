@@ -1,0 +1,24 @@
+Evaluation in RAG Systems
+
+Evaluation measures how well the RAG system performs.
+
+Key metrics:
+- Precision (relevance of retrieved chunks)
+- Recall (coverage of relevant information)
+- Faithfulness (no hallucination)
+- Answer correctness
+
+Types of evaluation:
+- Human evaluation
+- Automated evaluation (LLM-as-a-judge)
+
+Challenges:
+- Measuring correctness objectively
+- Separating retrieval vs generation errors
+
+Advanced evaluation:
+- Context recall
+- Context precision
+- Answer faithfulness
+
+Evaluation helps improve system reliability.

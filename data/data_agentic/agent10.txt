@@ -1,0 +1,26 @@
+Advanced Agentic Systems
+
+Modern agents are highly sophisticated.
+
+Part 1: Advanced Capabilities
+
+- Multi-agent collaboration
+- Hierarchical planning
+- Tool chaining
+- Autonomous decision-making
+
+Agents can work together to solve complex tasks.
+
+Part 2: Challenges
+
+- High latency
+- Cost of multiple LLM calls
+- Error propagation
+- Safety risks
+
+Future improvements focus on:
+- Efficiency
+- Reliability
+- Better reasoning
+
+Agentic AI is a key step toward autonomous intelligent systems.

@@ -1,0 +1,1 @@
+# Option to add data into the memory for specific domain.

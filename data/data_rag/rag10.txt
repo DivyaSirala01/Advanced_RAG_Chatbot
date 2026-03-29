@@ -1,0 +1,33 @@
+Advanced RAG Systems
+
+Modern RAG systems go beyond basic retrieval and generation.
+
+Advanced features include:
+- Hybrid retrieval (BM25 + vector search)
+- Reranking with cross-encoders
+- Multi-hop reasoning
+- Self-RAG (self-reflection)
+- Query understanding and routing
+
+Performance improvements:
+- Semantic caching
+- Response reuse
+- Optimization techniques
+
+Agentic RAG:
+- Planning steps
+- Tool usage
+- Iterative reasoning
+
+Challenges:
+- Scalability
+- Latency
+- Cost optimization
+
+Advanced RAG systems are used in:
+- Enterprise AI assistants
+- Legal AI
+- Healthcare systems
+- Developer copilots
+
+The future of RAG lies in combining retrieval, reasoning, and decision-making.

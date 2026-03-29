@@ -1,0 +1,25 @@
+Planning in Agentic Systems
+
+Planning is the core intelligence of an agent.
+
+Part 1: Task Decomposition
+
+The agent breaks a complex task into smaller steps.
+
+Example:
+Task: "Summarize and analyze document"
+
+Steps:
+1. Extract text
+2. Identify key sections
+3. Summarize
+4. Analyze risks
+
+Part 2: Planning Strategies
+
+Types of planning:
+- Static planning (fixed steps)
+- Dynamic planning (adaptive)
+- Iterative planning (refines over time)
+
+Good planning reduces errors and improves efficiency.

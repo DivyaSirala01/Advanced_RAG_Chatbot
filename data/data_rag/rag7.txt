@@ -1,0 +1,24 @@
+Context Engineering in RAG
+
+After retrieval, the system prepares context for the LLM.
+
+This step is called context engineering.
+
+Key tasks:
+- Selecting relevant chunks
+- Removing duplicates
+- Compressing content
+- Ordering information
+
+Why it matters:
+- LLM input is limited by token size
+- Too much context can reduce accuracy
+- Irrelevant context leads to hallucination
+
+Techniques:
+- Context compression
+- Relevance filtering
+- Priority ranking
+
+Goal:
+Provide the most relevant and concise information to the LLM.

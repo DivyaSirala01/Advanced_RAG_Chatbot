@@ -1,0 +1,21 @@
+Reasoning in Agentic Systems
+
+Reasoning allows agents to make decisions.
+
+Part 1: Logical Reasoning
+
+The agent evaluates:
+- Available data
+- Possible actions
+- Expected outcomes
+
+Chooses the best option.
+
+Part 2: Decision Making
+
+Based on reasoning, the agent decides:
+- Next action
+- Whether to continue
+- When to stop
+
+Good reasoning reduces errors and improves reliability.

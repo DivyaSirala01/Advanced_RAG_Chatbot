@@ -1,0 +1,22 @@
+Output Generation in Agentic Systems
+
+After completing tasks, the agent produces output.
+
+Part 1: Response Generation
+
+The agent:
+- Formats results
+- Provides explanations
+- Ensures clarity
+
+Example:
+Summary + insights + recommendations
+
+Part 2: Action Layer
+
+Agents can also:
+- Send emails
+- Trigger workflows
+- Update systems
+
+This makes them capable of real-world impact.

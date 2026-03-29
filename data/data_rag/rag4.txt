@@ -1,0 +1,31 @@
+Embeddings in RAG Systems
+
+Embeddings are numerical vector representations of text.
+
+They convert text into a format that machines can understand and compare.
+
+Example:
+"leave policy" → [0.23, -0.91, 0.45, ...]
+
+Why embeddings are important:
+- Enable semantic search
+- Capture meaning, not just keywords
+
+Types of embeddings:
+- Sentence embeddings
+- Document embeddings
+
+Embedding models:
+- OpenAI embeddings
+- Sentence Transformers
+- Cohere embeddings
+
+Key properties:
+- Similar meanings → similar vectors
+- Distance between vectors represents similarity
+
+Challenges:
+- Choosing the right embedding model
+- Handling domain-specific vocabulary
+
+Embeddings are stored in a vector database for fast retrieval.

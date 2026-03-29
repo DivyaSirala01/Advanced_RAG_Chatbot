@@ -1,0 +1,29 @@
+Generation in RAG Systems
+
+Generation is the final step where the LLM produces the answer.
+
+Inputs:
+- User query
+- Retrieved context
+
+The LLM uses this information to generate a response.
+
+Prompt design is critical:
+- Clear instructions
+- Context formatting
+- Avoid ambiguity
+
+Example:
+"Answer the question using only the provided context."
+
+Challenges:
+- Hallucinations
+- Over-reliance on context
+- Ignoring important information
+
+Techniques:
+- Prompt engineering
+- Few-shot examples
+- Output constraints
+
+The goal is to generate accurate and grounded responses.

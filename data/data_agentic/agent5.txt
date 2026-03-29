@@ -1,0 +1,22 @@
+Execution Loop in Agentic Systems
+
+Agents operate in a loop: Plan → Execute → Observe.
+
+Part 1: Execution
+
+The agent performs actions:
+- Calls tools
+- Queries databases
+- Generates responses
+
+Each action produces an output.
+
+Part 2: Observation
+
+The agent evaluates results:
+- Was the action successful?
+- Is the output useful?
+
+This feedback is used to decide the next step.
+
+This loop enables iterative problem solving.

@@ -1,0 +1,27 @@
+Retrieval in RAG Systems
+
+Retrieval is the process of finding relevant chunks from the knowledge base based on a user query.
+
+Steps:
+1. Convert query into embedding
+2. Perform similarity search
+3. Retrieve top-k relevant chunks
+
+Types of retrieval:
+- Dense retrieval (vector-based)
+- Sparse retrieval (BM25)
+- Hybrid retrieval (combining both)
+
+Top-k selection determines how many chunks are retrieved.
+
+Challenges:
+- Irrelevant results
+- Missing important context
+- Over-retrieval
+
+Improving retrieval:
+- Query rewriting
+- Multi-query expansion
+- Reranking
+
+Retrieval quality directly impacts final answer quality.

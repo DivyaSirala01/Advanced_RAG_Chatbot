@@ -1,0 +1,30 @@
+Tool Usage in Agentic Systems
+
+Agents can use external tools to extend their capabilities.
+
+Part 1: Tool Selection
+
+The agent decides which tool to use:
+- Search API
+- Database query
+- Code execution
+- Document parser
+
+Selection is based on:
+- Task type
+- Available tools
+- Context
+
+Part 2: Tool Execution
+
+Once selected, the agent:
+- Calls the tool
+- Passes correct inputs
+- Receives output
+
+Example:
+Tool: Calculator
+Input: 2 + 2
+Output: 4
+
+Tool usage makes agents powerful and practical.

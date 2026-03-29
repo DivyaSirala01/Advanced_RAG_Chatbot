@@ -1,0 +1,30 @@
+Vector Databases in RAG
+
+A vector database stores embeddings and allows efficient similarity search.
+
+Popular vector databases:
+- FAISS
+- Chroma
+- Pinecone
+- Weaviate
+
+Why vector databases are needed:
+- Fast nearest neighbor search
+- Efficient storage of high-dimensional vectors
+
+How it works:
+1. Store embeddings
+2. Query embedding is generated
+3. Similar vectors are retrieved using distance metrics
+
+Common similarity metrics:
+- Cosine similarity
+- Euclidean distance
+- Dot product
+
+FAISS is widely used because:
+- It is fast
+- Works locally
+- Scales well for large datasets
+
+Vector databases are the backbone of the retrieval system.

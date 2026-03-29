@@ -1,0 +1,14 @@
+# Adding more domains
+- Basic ML
+- NLP
+- RAG
+- Agentic
+- LangChain
+- LangGraph
+- AWS
+- Docker
+- MongoDB
+- NoSQL
+- Fine tuning
+- Red-Teaming
+- Prompt Engineering

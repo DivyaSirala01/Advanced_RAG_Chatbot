@@ -1,0 +1,30 @@
+Introduction to Agentic AI Systems
+
+Agentic AI refers to systems where AI models can autonomously make decisions, plan actions, and execute tasks instead of just responding to prompts.
+
+Unlike traditional LLMs that follow a single input-output pattern, agentic systems operate in loops and can adapt their behavior based on intermediate results.
+
+Part 1: What is an Agent?
+
+An agent is an AI system that:
+- Receives input
+- Decides what to do
+- Takes actions
+- Observes outcomes
+- Adjusts its behavior
+
+This makes agents capable of solving complex, multi-step problems.
+
+Part 2: Why Agentic Workflows?
+
+Agentic workflows are useful when:
+- Tasks require multiple steps
+- Decisions depend on intermediate results
+- External tools are needed
+- The system must adapt dynamically
+
+Examples:
+- Booking systems
+- Code generation pipelines
+- Legal document analysis
+- Autonomous assistants

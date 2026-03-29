@@ -1,0 +1,33 @@
+Chunking in RAG Systems
+
+Chunking is the process of breaking large documents into smaller pieces called chunks.
+
+Why chunking is important:
+- LLMs have token limits
+- Smaller chunks improve retrieval precision
+- Large documents are difficult to search efficiently
+
+Common chunking strategies:
+1. Fixed-size chunking
+2. Recursive chunking (preferred)
+3. Semantic chunking
+4. Sentence-based chunking
+
+Key parameters:
+- Chunk size
+- Chunk overlap
+
+Chunk overlap ensures continuity of context across chunks.
+
+Example:
+A document of 2000 words may be split into chunks of 500 words with 50-word overlap.
+
+Advanced chunking techniques:
+- Context-aware chunking
+- Hierarchical chunking
+- Adaptive chunking
+
+Poor chunking can lead to:
+- Loss of context
+- Irrelevant retrieval
+- Reduced accuracy

@@ -1,0 +1,20 @@
+Reflection in Agentic Systems
+
+Reflection improves agent performance.
+
+Part 1: Self-Evaluation
+
+The agent checks:
+- Is the answer correct?
+- Did I miss something?
+
+This helps identify errors.
+
+Part 2: Self-Correction
+
+If issues are found:
+- Re-run steps
+- Adjust strategy
+- Improve output
+
+This makes agents more robust and reliable.

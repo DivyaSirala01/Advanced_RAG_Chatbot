@@ -1,0 +1,24 @@
+Agent Input Processing
+
+Agent systems start by understanding the input before taking action.
+
+Part 1: Input Understanding
+
+The agent must:
+- Identify intent
+- Extract key entities
+- Determine task type
+
+Example:
+"Analyze this contract and identify risks"
+
+Intent: Analysis
+Task: Contract review
+
+Part 2: Parsing and Structuring
+
+Raw input is converted into structured format:
+- JSON representation
+- Key-value extraction
+
+This structured input allows the agent to reason more effectively in later steps.
