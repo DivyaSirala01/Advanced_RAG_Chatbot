@@ -7,5 +7,4 @@ app = FastAPI()
 
 @app.post("/chat")
 def chat(request: ChatRequest):
-    answer = run_pipeline(request.query, request.role)
-    return {"answer": answer}
+    return run_pipeline(request.query, request.role)

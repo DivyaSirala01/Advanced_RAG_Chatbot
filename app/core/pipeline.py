@@ -3,6 +3,10 @@ from langchain_core.documents import Document
 from app.cache.semantic_cache import get_cached_answer, store_query_answer
 from app.context.engineer_context import engineer_context
 from app.core.role_router import get_retriever_for_role
+from app.evaluation.faithfulness import evaluate_faithfulness
+from app.evaluation.judge import evaluate_answer
+from app.evaluation.logger import log_evaluation
+from app.evaluation.metrics import compute_context_precision, compute_context_recall
 from app.query.final_query import prepare_retrieval_queries
 from app.retrieval.reranker import RERANK_MIN_SCORE, rerank_documents
 from app.generation.generator import generate_answer
@@ -21,13 +25,13 @@ def _merge_unique_docs(doc_lists: list[list[Document]]) -> list[Document]:
     return out
 
 
-def run_pipeline(query: str, role: str = "RAG") -> str:
+def run_pipeline(query: str, role: str = "RAG") -> dict:
     # Step 7 — normalize for cache keys; keep original query for retrieval + generation.
     cache_key = normalize_query(query)
     if cache_key:
         hit = get_cached_answer(cache_key)
         if hit is not None:
-            return hit
+            return {"answer": hit, "evaluation": None}
 
     # Role routing — pick retriever (e.g. RAG vs agentic corpus).
     retriever = get_retriever_for_role(role)
@@ -53,9 +57,37 @@ def run_pipeline(query: str, role: str = "RAG") -> str:
     # Generation — LLM answer from context + user query.
     answer = generate_answer(context, query)
 
+    faithfulness = evaluate_faithfulness(query, context, answer)
+    judge = evaluate_answer(query, context, answer)
+    context_precision = compute_context_precision(docs, query)
+    context_recall = compute_context_recall(query, context)
+
+    evaluation = {
+        "faithfulness": faithfulness,
+        "relevance": judge["relevance"],
+        "correctness": judge["correctness"],
+        "completeness": judge["completeness"],
+        "helpfulness": judge["helpfulness"],
+        "judge_feedback": judge["feedback"],
+        "context_precision": context_precision,
+        "context_recall": context_recall,
+    }
+
+    log_evaluation(
+        {
+            "query": query,
+            "context": context,
+            "answer": answer,
+            "faithfulness_score": faithfulness.get("score"),
+            "judge_scores": judge,
+            "context_precision": context_precision,
+            "context_recall": context_recall,
+        }
+    )
+
     if cache_key:
         store_query_answer(cache_key, answer)
 
-    return answer
+    return {"answer": answer, "evaluation": evaluation}
 
 

@@ -192,6 +192,13 @@ Store in Cache
 * Avoid reloading per query
 
 ---
+## ⚡ Performance Optimizations
+
+- Semantic caching (Step 7)
+- Query normalization
+- **Preloading retrievers (Step 7.2 — documented design)**
+
+See: `STEP7_2.md`
 
 ### 🔹 Limit Top-K
 
